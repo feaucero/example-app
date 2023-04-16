@@ -1,0 +1,9 @@
+.sector {
+    border: 1px solid #56b4d1;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+input {
+    margin-top: 5px;
+}

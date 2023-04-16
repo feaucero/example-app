@@ -1,0 +1,5 @@
+<div>
+    <h1>Built-in attributes component</h1>
+    <p (click)="ngClassClick()" [ngClass]="{ 'green': isGreen }">Exemplo de ngClass: Fundo verde{{isGreen ? '!' : '?'}}</p>
+    <p [ngStyle]="{ 'background-color': blueBgColor, 'color': whiteBgColor }">Exemplo de ngStyle: Fundo azul!</p>
+</div>

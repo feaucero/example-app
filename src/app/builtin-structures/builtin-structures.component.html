@@ -1,0 +1,24 @@
+<div class="component">
+    <p>Built-in structures component</p>
+    <div class="sector">
+        <p>NgIf</p>
+        <button (click)="toggleMessage()">{{showMessage ? 'Esconder' : 'Exibir'}}</button>
+        <p *ngIf="showMessage">Exemplo de ng-if</p>
+    </div>
+    <div class="sector">
+        <p>NgSwitch</p>
+        <input type="number" [(ngModel)]="option">
+        <div [ngSwitch]="option">
+            <p *ngSwitchCase="1">1</p>
+            <p *ngSwitchCase="2">2</p>
+            <p *ngSwitchCase="3">3</p>
+            <p *ngSwitchDefault>Valor padrão</p>
+        </div>
+    </div>
+    <div class="sector">
+        <p>NgFor</p>
+        <ul>
+            <li *ngFor="let item of list">{{ item.Id }} - {{item.Name}}</li>
+        </ul>
+    </div>
+</div>

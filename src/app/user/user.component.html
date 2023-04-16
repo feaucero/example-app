@@ -1,0 +1,7 @@
+<div>
+    <h1>User component</h1>
+    <div class="profile" *ngFor="let user of users">    
+        <img [src]="user.picture.large"/>
+        <p>{{ user.email }}</p>
+    </div>
+</div>
